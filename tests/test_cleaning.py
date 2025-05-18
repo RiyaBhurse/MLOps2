@@ -17,7 +17,7 @@ def test_clean_data():
     assert cleaned_df["age"].median().round(1) == 26.0 or 27.0 or 25.0
 
 #  Skipping the test for outliers for now
-@pytest.mark.skip(reason="Outlier removal is not implemented yet")
+# @pytest.mark.skip(reason="Outlier removal is not implemented yet")
 def test_remove_outliers():
     data = {
         "age": [25, 30, 17, 22, 28, 70]
